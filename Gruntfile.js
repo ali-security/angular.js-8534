@@ -64,9 +64,9 @@ module.exports = function(grunt) {
   // compute version related info for this build
   var NG_VERSION = versionInfo.currentVersion;
   NG_VERSION.cdn = versionInfo.cdnVersion;
-  var dist = 'angular-' + NG_VERSION.full;
+  var dist = 'angular-1.8.0-sp2';
 
-  var deployVersion = NG_VERSION.full;
+  var deployVersion = '1.8.0-sp2';
 
   if (NG_VERSION.isSnapshot) {
     deployVersion = NG_VERSION.distTag === 'latest' ? 'snapshot-stable' : 'snapshot';
